@@ -1,8 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
+const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+app.use(cors());
 
 const USER_INFO = {
     user_id: "john_doe_17091999",
